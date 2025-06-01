@@ -1,0 +1,36 @@
+// src/pages/Home.scss
+
+.home__main {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+
+  @media (min-width: 768px) {
+    padding: 4rem 3rem;
+  }
+}
+
+.home__content {
+  max-width: 800px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #4b4b4b;
+  }
+
+  ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    li {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
