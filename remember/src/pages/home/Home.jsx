@@ -5,6 +5,19 @@ const Home = () => {
         <>
 
             <section className="home__main">
+                <section className="home__heroBlock">
+                    <div className="home__heroBlock-container">
+                        <div className="hero__text">
+                            <h1>Залишіть історію назавжди</h1>
+                            <p>Сервіс меморіальних сторінок із QR-кодами</p>
+                            <button className="btn-primary">Залишити заявку</button>
+                        </div>
+                        <div className="hero__qr">
+                            <img src="/img/qr_code_for_mobile_english_wikipedia-svg.webp" alt="QR-код"/>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="home__content">
                     <h1>Меморіальні сторінки з QR-кодом — збережіть памʼять назавжди</h1>
                     <p>
