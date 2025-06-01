@@ -8,8 +8,6 @@
 }
 
 .home__heroBlock {
-
-
   margin-bottom: 3rem;
   padding: 0 1rem;
   display: flex;
@@ -23,7 +21,7 @@
     padding: 0 3rem;
   }
 
-  &-container{
+  &-container {
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -65,15 +63,17 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(150, 150, 200, 0.1);
 
     img {
       width: 100%;
       height: auto;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(150, 150, 200, 0.1);
 
       @media (min-width: 768px) {
-        width: 50%;
+        width: 75%;
       }
     }
   }
