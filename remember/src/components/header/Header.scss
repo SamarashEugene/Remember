@@ -3,8 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
   position: relative;
 
   &__logo {
@@ -57,7 +55,6 @@
       }
     }
 
-    // mobile
     @media (max-width: 768px) {
       position: absolute;
       top: 100%;

@@ -1,4 +1,6 @@
 import './Home.scss';
+import {Link} from "react-router-dom";
+import React from "react";
 
 const Home = () => {
     return (
@@ -10,7 +12,8 @@ const Home = () => {
                         <div className="hero__text">
                             <h1>Залишіть історію назавжди</h1>
                             <p>Сервіс меморіальних сторінок із QR-кодами</p>
-                            <button className="btn-primary">Залишити заявку</button>
+
+                            <Link to="/example" className="btn-primary">Переглянути приклад</Link>
                         </div>
                         <div className="hero__qr">
                             <img src="/img/qr_code_for_mobile_english_wikipedia-svg.webp" alt="QR-код"/>
