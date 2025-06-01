@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React, {forwardRef, useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
-const Header = () => {
+const Header = forwardRef((props, ref) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="header">
+        <header ref={ref} className="header">
             <div className="header__logo">
                 <Link to="/" onClick={() => setMenuOpen(false)}>Памʼятай</Link>
             </div>
@@ -30,6 +30,16 @@ const Header = () => {
             </nav>
         </header>
     );
-};
+});
+
+// const Header = ({ref}) => {
+//
+//
+//     return (
+//         <header className="header" ref={ref}>
+//
+//         </header>
+//     );
+// };
 
 export default Header;

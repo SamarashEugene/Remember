@@ -1,9 +1,9 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
     return (
-        <footer className="footer">
+        <footer className="footer" ref={ref}>
             <div className="footer__content">
                 <p>© 2025 Памʼятай</p>
                 <p>
@@ -12,6 +12,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+});
 
 export default Footer;
